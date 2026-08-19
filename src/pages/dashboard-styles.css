@@ -1,0 +1,80 @@
+/* dashboard only styles. some of these are also in styles.css, keep both in sync manually */
+
+.dashboard { display: block }
+
+.btn {
+  border-radius: 7px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 20px 0 10px 0 }
+.card {
+  background: white;
+  border: 1px solid #ececf0;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.card-label { font-size: 11px; text-transform: uppercase; color: #999; letter-spacing: 0.04em }
+.card-value { font-size: 24px; font-weight: 700; margin-top: 3px }
+
+.progress-outer { height: 6px; background: #ececf0; border-radius: 4px; overflow: hidden; margin-bottom: 20px }
+.progress-inner { height: 6px; transition: width 0.3s ease }
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+  border: 1px solid #ececf0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+.toolbar .input { width: auto !important; min-width: 150px }
+#search-box { min-width: 240px !important }
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #ececf0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 13px;
+}
+.task-table th {
+  text-align: left;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 0.05em;
+  padding: 9px 10px;
+  border-bottom: 1px solid #ececf0;
+  background: #fcfcfd !important;
+}
+.task-table td { padding: 9px 10px; border-bottom: 1px solid #f4f4f7; vertical-align: middle }
+.task-row { background: white }
+
+.who { display: inline-flex; align-items: center; font-size: 12px }
+
+.empty { text-align: center; padding: 26px; color: #999; font-size: 13px }
+
+.pager { display: flex; gap: 4px; margin-top: 14px; align-items: center }
+
+.prio-col { flex: 1; min-width: 220px }
+.mini-task {
+  border: 1px solid #ececf0;
+  border-radius: 7px;
+  padding: 7px 10px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* fix for the thing riya reported, do not touch */
+.task-table .pill { position: relative; top: 0px }
